@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.loginBlock {
+    margin: 40px 40px;
+    box-shadow: 0px 0px 20px 7px #ccc;
+    max-height: 85vh;
+    overflow-y: scroll;
+    display: flex;
+}
+
+.loginBlock::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.loginBlock>div {
+    width: 50%;
+    padding: 20px 35px;
+    height: 85vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.loginBlock>div:last-child {
+    background-image: url("../Images/Lab-Test/lab-test.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.loginBlock form {
+    width: 100%;
+}
+
+.loginBlock form h3 {
+    padding: 20px 0;
+}
+
+.loginBlock input {
+    border-width: 0 0 1px 0;
+    width: 45%;
+}
+
+.loginBlock input,
+.loginBlock select {
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.loginBlock input[type="checkbox"],
+.loginBlock input[type="radio"] {
+    width: auto;
+}
+
+.loginBlock select {
+    min-width: 150px;
+}
+
+.loginBlock input:focus {
+    background-color: rgb(255, 255, 255, 35%);
+}
+
+.btn-block {
+    margin: 0 40px;
+    padding: 0 20px;
+    width: 45%;
+    text-align: right;
+}
+
+.btn-block button {
+    background-color: #af67f3;
+    padding: 5px 15px;
+    margin: 0 15px 15px;
+    border-width: 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .loginBlock {
+        flex-direction: column-reverse;
+    }
+    .loginBlock > div {
+        width: 100%;
+        overflow-y: auto;
+    }
+    .btn-block {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
