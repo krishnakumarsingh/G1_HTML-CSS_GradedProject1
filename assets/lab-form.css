@@ -53,6 +53,7 @@ body {
     margin-bottom: 10px;
     font-size: 14px;
 }
+
 .loginBlock input[type="checkbox"],
 .loginBlock input[type="radio"] {
     width: auto;
@@ -73,7 +74,8 @@ body {
     text-align: right;
 }
 
-.btn-block button {
+.btn-block button,
+.btn-block input[type="reset"] {
     background-color: #af67f3;
     padding: 5px 15px;
     margin: 0 15px 15px;
@@ -82,14 +84,20 @@ body {
     color: #ffffff;
 }
 
+sup {
+    color: red;
+}
+
 @media only screen and (max-width: 600px) {
     .loginBlock {
         flex-direction: column-reverse;
     }
-    .loginBlock > div {
+
+    .loginBlock>div {
         width: 100%;
         overflow-y: auto;
     }
+
     .btn-block {
         width: 100%;
         margin: 0;
