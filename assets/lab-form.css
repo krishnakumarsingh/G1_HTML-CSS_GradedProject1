@@ -3,21 +3,21 @@ body {
     margin: 0;
 }
 
-.loginBlock {
-    margin: 40px 40px;
+.lab-form {
+    margin: 30px 60px 20px;
     box-shadow: 0px 0px 20px 7px #ccc;
     max-height: 85vh;
     overflow-y: scroll;
     display: flex;
 }
 
-.loginBlock::after {
+.lab-form::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.loginBlock>div {
+.lab-form>div {
     width: 50%;
     padding: 20px 35px;
     height: 85vh;
@@ -25,28 +25,28 @@ body {
     overflow-y: scroll;
 }
 
-.loginBlock>div:last-child {
+.lab-form>div:last-child {
     background-image: url("../Images/Lab-Test/lab-test.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
 }
 
-.loginBlock form {
+.lab-form form {
     width: 100%;
 }
 
-.loginBlock form h3 {
+.lab-form form h3 {
     padding: 20px 0;
 }
 
-.loginBlock input {
+.lab-form input {
     border-width: 0 0 1px 0;
     width: 45%;
 }
 
-.loginBlock input,
-.loginBlock select {
+.lab-form input,
+.lab-form select {
     padding: 10px;
     box-sizing: border-box;
     font-family: "Times New Roman", Times, serif;
@@ -54,16 +54,16 @@ body {
     font-size: 14px;
 }
 
-.loginBlock input[type="checkbox"],
-.loginBlock input[type="radio"] {
+.lab-form input[type="checkbox"],
+.lab-form input[type="radio"] {
     width: auto;
 }
 
-.loginBlock select {
+.lab-form select {
     min-width: 150px;
 }
 
-.loginBlock input:focus {
+.lab-form input:focus {
     background-color: rgb(255, 255, 255, 35%);
 }
 
@@ -89,11 +89,11 @@ sup {
 }
 
 @media only screen and (max-width: 600px) {
-    .loginBlock {
+    .lab-form {
         flex-direction: column-reverse;
     }
 
-    .loginBlock>div {
+    .lab-form>div {
         width: 100%;
         overflow-y: auto;
     }

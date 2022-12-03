@@ -111,6 +111,7 @@ footer p {
     list-style: none;
     transition: all 750ms ease;
     left: 0;
+    display: block;
 }
 
 .slider ul {
@@ -174,6 +175,7 @@ footer p {
     padding: 15px;
     margin: 0 15px;
     background-color: #efeff0;
+    box-sizing: border-box;
 }
 
 .item h3 {
@@ -202,4 +204,32 @@ button {
 .item:hover button {
     background-color: rgb(250, 234, 230);
     border: 1px solid rgb(0, 255, 76);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin-top: 230.5px;
+    }
+
+    .slider img {
+        height: 138px;
+    }
+
+    nav.header-lable ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .item img {
+        height: 200px;
+    }
 }
