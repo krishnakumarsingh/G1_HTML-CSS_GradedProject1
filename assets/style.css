@@ -22,7 +22,8 @@ header {
 }
 
 header h1 {
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     color: #ffffff;
 }
@@ -32,7 +33,8 @@ nav.header-lable {
 }
 
 nav.header-lable ul {
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -91,7 +93,8 @@ footer {
 }
 
 footer p {
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     text-align: center;
     padding: 25px 0;
@@ -157,7 +160,8 @@ footer p {
 
 .products {
     margin: auto;
-    width: 80%;
+    width: 100%;
+    max-width: 1024px;
     margin-top: 20px;
 }
 
