@@ -161,8 +161,9 @@ footer p {
     width: 25%;
     padding: 15px;
     margin: 0 15px;
-    background-color: #efeff0;
+    background-color: #f3f3fd;
     box-sizing: border-box;
+    box-shadow: 7px 5px 15px #ccc;
 }
 
 .item h3 {
@@ -172,6 +173,11 @@ footer p {
 .item img {
     width: 100%;
     height: 100px;
+    transform: scale(0.99);
+}
+
+.item img:hover {
+    transform: scale(1.15);
 }
 
 .item p {
@@ -188,7 +194,7 @@ button {
     font-weight: bold;
 }
 
-.item:hover button {
+.item button:active {
     background-color: rgb(250, 234, 230);
     border: 1px solid rgb(0, 255, 76);
 }
@@ -207,6 +213,19 @@ button {
         align-items: center;
     }
 
+    nav.header-lable ul li {
+        width: 100%;
+    }
+    
+    nav.header-lable ul li a {
+        justify-content: space-around;
+    }
+
+    nav.header-lable ul li:hover ul {
+        width: 100%;
+        left: 0;
+        z-index: 1;
+    }
     .items {
         flex-direction: column;
     }
